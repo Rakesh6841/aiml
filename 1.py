@@ -37,6 +37,7 @@ def aStarAlgo(start_node, stop_node):
             path.reverse()
             print('Path found: {}'.format(path))
             return path
+        open_set.remove(n)
         closed_set.add(n)
     print('Path does not exist!')
     return None
