@@ -42,7 +42,6 @@ for i in range(epoch):
     wh += X.T.dot(d_hiddenlayer) *lr
     
     bout += np.sum(d_output, axis=0,keepdims=True) *lr 
-    wh += X.T.dot(d_hiddenlayer) *lr
 
 print("Input: \n" + str(X))
 print("Actual Output: \n" + str(y))
